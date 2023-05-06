@@ -1,0 +1,229 @@
+/*
+Color pallette:
+Dark gold: #948032
+Light yellow: #FFE88A
+Bold yellow: #E0C762
+Dark blue: #232994
+Light blue: #6369E0
+
+*/
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+
+.home-title-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 6vh;
+    text-align: center;
+    background-color: #F6F1F130;
+}
+
+.home-title-container h1{
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.home-title-container h4{
+    font-size: 1.3rem;
+}
+
+.home-left-container{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../assets/cottage-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-left-container h2{
+    color: aliceblue;
+    margin-top: 25vh;
+}
+
+.home-left-container p{
+    width: 40%;
+    margin-top: 2vh;
+    color: aliceblue;
+    font-size: 1.3rem;
+    background-color: #1D005540;
+}
+
+.home-button{
+    margin-top: 5vh;
+    background-color: #1D005530;
+    padding: 2%;
+    font-size: 1.3rem;
+    color: aliceblue;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #1D0055;
+}
+
+.home-button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.home-button:hover{
+    background-color: #1D0055;
+}
+
+.home-right-container{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../assets/hotel-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-right-container h2{
+    color: aliceblue;
+    margin-top: 25vh;
+}
+
+.home-right-container p{
+    width: 40%;
+    margin-top: 2vh;
+    color: aliceblue;
+    font-size: 1.3rem;
+    background-color: #1D005540;
+}
+
+.footer{
+    width: 100vw;
+}
+
+.title-video-container{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0;
+    position: relative;
+}
+
+.video-container{
+    grid-area: 1 / 1 / -1 / -1;
+}
+
+#beachVideo{
+    width: 100%;
+}
+
+.navbar-menu{
+    grid-area: 1 / 1 / 2 / -1;
+    background-color: #F6F1F130;
+    height: max-content;
+}
+
+.nav-item a{
+    color: aliceblue;
+}
+
+.title-container{
+    grid-area: 2 / 2 / 4 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title-container h3{
+    color: aliceblue;
+}
+
+.booking-form{
+    position: absolute;
+    width: 20vw;
+    left: 12.5vw;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1D005540;
+    border-radius: 5%;
+    padding: 2vw;
+}
+
+.booking-label{
+    color: aliceblue;
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    .home-title-container h1{
+        font-size: 2rem;
+    }
+    
+    .home-title-container h4{
+        font-size: 1rem;
+    }
+
+    .home-right-container p{
+        width: 60%;
+    }
+
+    .home-left-container p{
+        width: 60%;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 799px) {
+    .home-title-container h1{
+        font-size: 1.5rem;
+    }
+    
+    .home-title-container h4{
+        font-size: 1rem;
+    }
+
+    .home-right-container p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .home-left-container p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .home-button{
+        padding: 1%;
+        font-size: 1rem;
+    }
+    
+}
